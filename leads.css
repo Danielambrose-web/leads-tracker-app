@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 15px;
+  font-family: "Bebas Neue", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+  box-shadow: inset 3px 3px 6px #bebebe,inset -3px -3px 6px #ffffff;
+}
+button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: #020e52;
+  color: white;
+  cursor: pointer;
+  width: 20%;
+}
+button:hover {
+  background-color: #020e5294;
+font-family: "Bebas Neue", sans-serif;
+}
