@@ -1,20 +1,22 @@
 let saveEl = document.getElementById("save-btn")
 let inputEl = document.getElementById("input-el")
 let ulEl = document.getElementById("ul-el")
-let myleads = [ "fohnsff","edjff","fdfdff" ]
 
-let listItems = ""
+let myleads = [ ]
+
+// let listItems = ""
+function renderLeads(){
+    let listItems = ""
+    for(let i = 0; i<myleads.length; i++){
+        // ulEl.innerHTML += "<li>" + myleads[i] + "</li>"
+        listItems += "<li><a target='_blank' href='"+myleads[i]+"'>" + myleads[i] +"</a></li>"
+    }                 
+    ulEl.innerHTML = listItems
+}
 
 saveEl.addEventListener("click", function(){
-    lead = inputEl.value
-    myleads.push(lead)
+
+    myleads.push(inputEl.value)
     renderLeads()
     inputEl.value = ""
 })
-
-for(let i = 0; i<myleads.length; i++){
-    // ulEl.innerHTML += "<li>" + myleads[i] + "</li>"
-    listItems += "<li>" + myleads[i] + "</li>"
-
-}
-ulEl.innerHTML = listItems
