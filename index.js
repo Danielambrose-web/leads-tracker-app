@@ -3,13 +3,18 @@ let inputEl = document.getElementById("input-el")
 let ulEl = document.getElementById("ul-el")
 let myleads = [ "fohnsff","edjff","fdfdff" ]
 
+let listItems = ""
 
 saveEl.addEventListener("click", function(){
     lead = inputEl.value
     myleads.push(lead)
-    console.log(myleads)
+    renderLeads()
+    inputEl.value = ""
 })
 
 for(let i = 0; i<myleads.length; i++){
-    console.log(myleads[i])
+    // ulEl.innerHTML += "<li>" + myleads[i] + "</li>"
+    listItems += "<li>" + myleads[i] + "</li>"
+
 }
+ulEl.innerHTML = listItems
