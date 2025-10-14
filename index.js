@@ -1,6 +1,6 @@
 let saveEl = document.getElementById("save-btn")
 let inputEl = document.getElementById("input-el")
-let myleads = []
+let myleads = [ "fohnsff","edjff","fdfdff" ]
 
 
 saveEl.addEventListener("click", function(){
@@ -8,3 +8,7 @@ saveEl.addEventListener("click", function(){
     myleads.push(lead)
     console.log(myleads)
 })
+
+for(let i = 0; i<myleads.length; i++){
+    console.log(myleads[i])
+}
