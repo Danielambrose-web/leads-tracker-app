@@ -28,5 +28,13 @@ saveEl.addEventListener("click", function(){
 
     renderLeads()
     console.log(localStorage.getItem("myLeads"))
+    // Get the leads from the localStorage - PS: JSON.parse()
+// Store it in a variable, leadsFromLocalStorage
+// Log out the variable
+
+
 
 })
+
+let OlderLeads =jason.parse( localStorage.getItem("myLeads") )
+console.log(OlderLeads)
