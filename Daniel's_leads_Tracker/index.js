@@ -22,6 +22,11 @@ function renderLeads(){
 saveEl.addEventListener("click", function(){
 
     myleads.push(inputEl.value)
-    renderLeads()
+    localStorage.setItem("myLeads", JSON.stringify(myleads))
+
     inputEl.value = ""
+
+    renderLeads()
+    console.log(localStorage.getItem("myLeads"))
+
 })
