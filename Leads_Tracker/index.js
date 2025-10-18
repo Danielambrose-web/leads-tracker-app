@@ -7,25 +7,25 @@ let myleads = []
 let OlderLeads = JSON.parse(localStorage.getItem("myLeads")) // JSON, not jason
 if (OlderLeads) {
     myleads = OlderLeads
-    renderLeads()
+    render(myleads)
 }
 
 deleteEl.addEventListener("click", function () {
     localStorage.clear()
     myleads = []
-    renderLeads()
+    render(myleads)
 })
 
 console.log(OlderLeads)
 
-function renderLeads() {
+function render(leads) {
     let listItems = ""
-    for (let i = 0; i < myleads.length; i++) {
+    for (let i = 0; i <leads.length; i++) {
         // ulEl.innerHTML += "<li>" + myleads[i] + "</li>"
         listItems += `
 <li>
-  <a target='_blank' href='${myleads[i]}'>
-    ${myleads[i]}
+  <a target='_blank' href='${leads[i]}'>
+    ${leads[i]}
   </a>
 </li>`
     }
@@ -37,7 +37,7 @@ saveEl.addEventListener("click", function () {
     localStorage.setItem("myLeads", JSON.stringify(myleads))
 
     inputEl.value = ""
-    renderLeads()
+    render(myleads)
 
     // Get the leads from the localStorage - PS: JSON.parse()
     // Store it in a variable, leadsFromLocalStorage
