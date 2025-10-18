@@ -1,39 +1,46 @@
-* {
-  margin: 0;
-  padding: 15px;
-  font-family: "Bebas Neue", sans-serif;
-}
 body {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-width: 400px;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
+
 input {
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
-  margin-right: 10px;
-  width: 100%;
-  box-shadow: inset 3px 3px 6px #bebebe,inset -3px -3px 6px #ffffff;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #030d3b;
+    margin-bottom: 4px;
 }
+
 button {
-  border-radius: 25px;
-  padding: 10px 20px;
-  background-color: #020e52;
-  color: white;
-  cursor: pointer;
-  width: 20%;
+    background: #020d31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
 }
-button:hover {
-  background-color: #020e5294;
-font-family: "Bebas Neue", sans-serif;
+
+/* Style the button according to the provided design */
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
 }
-ul{
-  list-style: none;
-  margin-top: 15px;
-  padding-left: 0;
+
+li {
+    margin-top: 5px;
 }
-a{
-  color: #020e52;
+
+a {
+    color: #0a16b9;
 }
+#delete-btn {
+    margin-left: 10px;
+    background-color: antiquewhite;
+    color: rgb(10, 12, 117);
+    border-color: #0a16b9;
+    border: 2px solid;
+}
+
