@@ -3,7 +3,7 @@ let inputEl = document.getElementById("input-el")
 let ulEl = document.getElementById("ul-el")
 let deleteEl = document.getElementById("delete-btn")
 let myleads = []
-
+let tabBtn = document.getElementById("tab-btn")
 let OlderLeads = JSON.parse(localStorage.getItem("myLeads")) // JSON, not jason
 if (OlderLeads) {
     myleads = OlderLeads
@@ -43,3 +43,5 @@ saveEl.addEventListener("click", function () {
     // Store it in a variable, leadsFromLocalStorage
     // Log out the variable
 })
+
+tabBtn.addEventListener("click", function(){
