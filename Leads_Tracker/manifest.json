@@ -5,7 +5,12 @@
   "description": "Save your leads with Daniels leads tracker",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "logo.png"
+    "default_icon": "16.png"
   },
-  "permissions": ["tabs"]
+  "permissions": ["tabs"],
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  }
 }
