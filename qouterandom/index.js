@@ -111,11 +111,19 @@ const quotes = [
 //   quoteEl.innerHTML = "hi";
 // }
 
-let log = Math.floor(Math.random() * 101);
+let log = Math.floor(Math.random() * 100);
 
 function generate() {
   let dispaly = document.getElementsByTagName("p")[0];
 
   dispaly.innerHTML = quotes[log];
+
+  if (log % 2 == 0) {
+    dispaly.style.color = "green";
+    dispaly.style.fontFamily = "Latin";
+    dispaly.style.fontSize = "34px";
+  } else {
+    dispaly.style.color = "red";
+  }
 }
 console.log(quotes[4]);
