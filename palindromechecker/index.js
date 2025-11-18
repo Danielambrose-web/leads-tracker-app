@@ -1,5 +1,5 @@
 let inputElement = document.getElementById("inputText");
-let messageEl = document.getElementsByTagName("pu")[0];
+let messageEl = document.getElementsByTagName("p")[0];
 
 function reverseString(str) {
   return str.split("").reverse().join("");
@@ -18,4 +18,6 @@ function check() {
     messageEl.innerText = "The text is not a palindrome";
     messageEl.style.color = "red";
   }
+
+  inputElement.innerHTML = "";
 }
