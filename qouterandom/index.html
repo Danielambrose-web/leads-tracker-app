@@ -4,17 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Quote generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      button {
+        font-size: 24px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: aqua;
+        border-radius: 30px;
+      }
       p {
         font-size: 24px;
+      }
+      h1 {
+        font-family: "Sixtyfour", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "BLED" 0, "SCAN" 0;
       }
     </style>
   </head>
   <body>
-    <h1>generate a random quote</h1>
+    <h1>Generate a random quote</h1>
     <p></p>
 
-    <button onclick="generate()">generate</button>
+    <button onclick="generate()">Generate</button>
 
     <script src="index.js"></script>
   </body>
