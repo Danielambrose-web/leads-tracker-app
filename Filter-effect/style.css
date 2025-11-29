@@ -1,0 +1,61 @@
+.gallery-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.3rem;
+  border: 1px solid #053b15;
+  background: #ffffff;
+  color: #053b15;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #053b15;
+  color: #ffffff;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.gallery-item {
+  /* overflow: hidden; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 30%;
+}
+
+.gallery-item img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item.hide {
+  display: none;
+}

@@ -4,20 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="gallery-container">
-      <!-- This header is now styled with Flexbox -->
-      <div class="gallery-header">
-        <div class="logo">
-          <!-- Make sure you have a 'logo.png' file or change the src -->
-          <img src="./imgs/public-asset/logo.png" alt="Gallery Logo" />
-        </div>
-        <div class="header-text">
-          <h1>Image Gallery</h1>
-          <p>A responsive gallery with filters and a lightbox.</p>
-        </div>
-      </div>
 
       <!-- These buttons are centered below the header -->
       <div class="filter-buttons">
@@ -28,7 +18,46 @@
         <button class="filter-btn" data-filter="food">Food</button>
         <button class="filter-btn" data-filter="others">Others</button>
       </div>
+
+
+      
+    <div class="image-grid">
+      </div>
+      <div class="gallery-item" data-category="animal">
+        <img src="./imgs/animal1.jpg" alt="Animal photo 1" />
+      </div>
+
+      </div>
+      <div class="gallery-item" data-category="other">
+        <img src="./imgs/others2.jpg" alt="Miscellaneous image 1" />
+              <div class="gallery-item" data-category="nature">
+        <img src="./imgs/nature2.jpg" alt="Portrait of person 3" />
+      </div>
+      </div>
+      </div>
+      <div class="gallery-item" data-category="people">
+        <img src="./imgs/human5.jpg" alt="Portrait of person 5" />
+      </div>
+      <div class="gallery-item" data-category="other">
+        <img src="./imgs/others3.jpg" alt="Miscellaneous image 3" />
+      </div>
+      <div class="gallery-item" data-category="animal">
+        <img src="./imgs/animal2.jpg" alt="Animal photo 5" />
+      </div>
+            <div class="gallery-item" data-category="nature">
+        <img src="./imgs/nature3.jpg" alt="Portrait of person 3" />
+      </div>
+      <div class="gallery-item" data-category="food">
+        <img src="./imgs/food5.jpg" alt="Food item 5" />
+      </div>
+            <div class="gallery-item" data-category="people">
+        <img src="./imgs/human7.jpg" alt="Portrait of person 3" />
+      </div>
+      </div>
     </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
 
